@@ -13,9 +13,8 @@ SOURCES += \
         #Display_plus_Text.cpp \
         MyFunction.cpp \
         #Save_25_08.cpp \
-        Save_26_08_22_1.cpp \
-        Save_26_08_22_2.cpp \
-        Save_26_08_22_3.cpp \
+        MyModel.cpp \
+        MyView.cpp \
         main.cpp
 
 # Default rules for deployment.
@@ -24,4 +23,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    MyFunction.h
+    MyFunction.h \
+    MyModel.h \
+    MyView.h
