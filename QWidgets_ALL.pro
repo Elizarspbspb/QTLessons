@@ -1,4 +1,4 @@
-QT -= gui
+QT += gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -11,6 +11,7 @@ CONFIG -= app_bundle
 
 SOURCES += \
         #Display_plus_Text.cpp \
+        MyController.cpp \
         MyFunction.cpp \
         #Save_25_08.cpp \
         MyModel.cpp \
@@ -23,6 +24,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
+    MyController.h \
     MyFunction.h \
     MyModel.h \
     MyView.h
